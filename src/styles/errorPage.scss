@@ -1,0 +1,32 @@
+@import 'variables.scss';
+
+.error-page {
+  height: 600px;
+}
+
+.error-info {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media-breakpoint-down(sm) {
+    left: 30%;
+    top: 60%;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  h4 {
+    font-family: $font-secondary;
+    font-weight: 900;
+    color: white;
+    margin-top: 20px;
+  }
+}

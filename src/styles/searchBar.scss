@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+.search-form {
+  input {
+    padding: 10px;
+    border: 1px solid #254d69;
+    border-radius: 4px 0 0 4px;
+    font-family: $font-primary;
+    background-color: $primary-light;
+    color: white;
+  }
+
+  ::placeholder {
+    color: $grayish;
+    opacity: 1; /* Firefox */
+  }
+
+  .btn-search {
+    border: 1px solid $secondary;
+    background-color: $secondary;
+    padding: 10px 20px;
+    border-radius: 0 4px 4px 0;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $font-primary;
+  }
+}

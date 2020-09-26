@@ -1,0 +1,67 @@
+@import 'variables.scss';
+
+.categories-section {
+  background-color: $primary-light;
+  padding-top: 50px;
+}
+
+.category-item {
+  position: relative;
+  background-color: $light-bg;
+  min-height: 400px;
+  margin-bottom: 20px;
+
+  .img-div {
+    height: 200px;
+
+    img {
+      height: 200px;
+      transition: transform 0.2s;
+    }
+
+    .img-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 200px;
+      width: 100%;
+      background-color: rgba(4, 15, 29, 0.178);
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+
+      .img-overlay {
+        position: relative;
+        height: 0;
+      }
+    }
+  }
+
+  .category-info {
+    padding: 5px 20px;
+
+    .category-title {
+      color: #111;
+      text-transform: uppercase;
+
+      h4 {
+        padding: 10px 0;
+        text-align: center;
+        font-family: $font-secondary;
+      }
+    }
+
+    p {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      font-family: $font-primary;
+      font-weight: lighter;
+      text-align: justify;
+    }
+  }
+}
