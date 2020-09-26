@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import { fetchLoading, filterMealsByIngredients, fetchingError } from './actionCreators';
 
 const filterByIngredients = ingredient => dispatch => {

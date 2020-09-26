@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import { fetchLoading, fetchingCategories, fetchingError } from './actionCreators';
 
 const fetchCategories = () => dispatch => {

@@ -1,3 +1,5 @@
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-extraneous-dependencies */
 import React, { useState } from 'react';
 import '../styles/searchBar.scss';
 import { connect } from 'react-redux';

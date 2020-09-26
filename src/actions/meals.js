@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import { fetchLoading, fetchingMeals, fetchingError } from './actionCreators';
 
 const fetchMeals = categoryType => dispatch => {

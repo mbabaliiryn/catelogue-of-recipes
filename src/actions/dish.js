@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 import { fetchLoading, fetchingDish, fetchingError } from './actionCreators';
 
 const fetchDish = mealId => dispatch => {
