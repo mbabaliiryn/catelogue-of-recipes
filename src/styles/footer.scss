@@ -1,0 +1,35 @@
+@import './variables.scss';
+
+.footer {
+  background-color: $primary;
+
+  .footer-info {
+    p {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $font-primary;
+      font-weight: lighter;
+      letter-spacing: 2px;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      color: $grayish;
+    }
+  }
+
+  .social-icons {
+    padding-top: 50px;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        display: inline-block;
+        margin: 0 10px;
+
+        a {
+          color: $whitish;
+        }
+      }
+    }
+  }
+}

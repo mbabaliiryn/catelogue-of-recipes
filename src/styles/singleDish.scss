@@ -1,0 +1,138 @@
+@import './variables';
+
+.dish-section {
+  background-color: $primary-light;
+}
+
+.dish-image {
+  max-height: 500px;
+  position: relative;
+
+  .img {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-down(md) {
+      height: 300px;
+    }
+  }
+
+  .dish-title {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+
+    @include media-breakpoint-down(md) {
+      left: 0;
+    }
+
+    h3 {
+      width: 700px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 2px;
+      line-height: 2.5rem;
+      color: $white;
+      font-family: $font-primary;
+      z-index: 1000;
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        left: 10%;
+      }
+    }
+  }
+
+  .dish-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 16, 34, 0.479);
+  }
+}
+
+.dish-info {
+  background-color: $light-bg;
+
+  .d-meta {
+    text-align: center;
+    padding: 50px 0;
+
+    span {
+      color: $grayish;
+      font-family: $font-primary;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      border: 1px solid $grayish;
+      padding: 8px 20px;
+      margin-left: 10px;
+    }
+  }
+
+  .dish-instructions {
+    p {
+      font-weight: 200;
+      font-family: $font-primary;
+      letter-spacing: 0.8px;
+      line-height: 1.5em;
+      text-align: justify;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.dish-heading {
+  font-family: $font-secondary;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1em;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+.ingredient-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+
+  div {
+    font-weight: 200;
+    font-family: $font-primary;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .ing-item::before {
+    content: "◉ ";
+    height: 20px;
+  }
+}
+
+.youtube-link {
+  iframe {
+    margin-bottom: 50px;
+    width: 100%;
+    min-height: 500px;
+
+    @include media-breakpoint-down(sm) {
+      min-height: 300px;
+    }
+  }
+}
